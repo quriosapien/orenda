@@ -1,24 +1,32 @@
-# orenda
+# Orenda
+
+For DEMO purpose only.
+Project is in `alpha` phase. Please do not use it for `production` use.
 
 ## Project setup
-```
-npm install
+
+```js
+npm i orenda
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Basic Usage
 
-### Compiles and minifies for production
-```
-npm run build
-```
+```js
+<template>
+  <OrendaButton
+    background="#fff"
+    color="#000"
+    text="Yo! Button works"
+  />
+</template>
 
-### Lints and fixes files
-```
-npm run lint
-```
+<script>
+import { OrendaButton } from 'orenda'
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+export default {
+  components: {
+    OrendaButton
+  }
+}
+</script>
+```
